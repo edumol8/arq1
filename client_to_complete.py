@@ -86,4 +86,6 @@ if __name__ == '__main__':
     # Si el usuario fue creado exitosamente, intenta obtenerlo y muestralo
     if new_user:
         # Obtenemos el usuario recién creado
-        get_user_sync(new_user['data']['id'])
+
+        getid = new_user['data']['id']
+        get_user_sync(getid)
